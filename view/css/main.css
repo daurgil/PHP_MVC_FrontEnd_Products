@@ -1,0 +1,92 @@
+
+/****products*/
+.error{
+    background-color: #BC1010;
+    padding: 8px 10px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+}
+.error:before{ /* Este es un truco para crear una flechita */
+    content: '';
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #BC1010;
+    border-left: 10px solid transparent;
+    left: -16px;
+    position:  absolute;
+    top: 5px;
+
+}
+
+.error1{
+    background-color: #BC1010;
+    padding: 8px 10px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+}
+.error1:before{ /* Este es un truco para crear una flechita */
+    content: '';
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #BC1010;
+    border-left: 10px solid transparent;
+    left: -16px;
+    position:  absolute;
+    top: 5px;
+
+}
+
+.msg{
+    color: white;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    position: absolute;
+    right: -155px;
+    text-transform: uppercase;
+    min-width: 121px;
+}
+.msg_ok{
+    background: #589D05;
+}
+.msg_error{
+    background: red;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#progress { position:relative; width:400px; border: 1px solid #ddd; padding: 1px; border-radius: 3px; }
+#bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
+#percent { position:absolute; display:inline-block; top:3px; left:48%; }
+
+.custom-file-upload {
+      background: #ddd;
+      border: 1px solid #aaa;
+	  border-top: 1px solid #ccc;
+	  border-left: 1px solid #ccc;
+	  -moz-border-radius: 3px;
+	  -webkit-border-radius: 3px;
+	  border-radius: 3px;
+	  color: #444;
+	  display: inline-block;
+	  font-size: 12px;
+	  font-weight: bold;
+	  text-decoration: none;
+	  text-shadow: 0 1px rgba(255, 255, 255, .75);
+	  cursor: pointer;
+	  margin-bottom: 20px;
+	  line-height: normal;
+	  padding: 8px 10px; }
