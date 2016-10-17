@@ -200,7 +200,7 @@ $(document).ready(function(){
       init: function() {
           this.on("success", function (file, response){
 
-              console.log(response);
+              //console.log(response);
 
               $("#progress").show();
               $("#bar").width('100%');

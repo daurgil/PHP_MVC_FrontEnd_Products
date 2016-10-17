@@ -123,6 +123,7 @@ function pintar_products(data) {
     //var cad = cad.toLowerCase();
     var img = document.createElement("div");
     var html = '<img src="' + cad + '" height="75" width="75"> ';
+    console.log(html);
     img.innerHTML = html;
     //alert(html);
 

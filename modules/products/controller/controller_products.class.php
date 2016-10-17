@@ -10,8 +10,7 @@
   if ((isset($_GET["upload"])) && ($_GET["upload"] == true)) {
   		$result_img = upload_files();
 			$_SESSION['result_img']=$result_img;
-  		//echo json_encode($result_avatar);
-  		//exit;
+
   }
 
 ///////////////////////////////////
@@ -32,6 +31,7 @@
 			}
 
 			$result_img = $_SESSION['result_img'];
+
 
 			if (($result['result_php']) && ($result_img['resultado'])) {
 
@@ -73,7 +73,7 @@
 				$jsondata["success"] = true;
 				$jsondata["redirect"] = $callback;
 				echo json_encode($jsondata);
-
+				exit;
 		} else {
 					$jsondata["success"] = false;
 					$jsondata["error"] = $result['error'];

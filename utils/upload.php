@@ -63,8 +63,10 @@ function upload_files() {
             $nombreFichero = $idUnico."-".$_FILES['file']['name'];
             $_SESSION['nombreFichero']=$nombreFichero;
             $copiarFichero = true;
+
             // I use absolute route to move_uploaded_file because this happens when i run ajax
-            $upfile = ($_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/media/'.$nombreFichero);
+            $upfile = $_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/media/'.$nombreFichero;
+
         }else{
                 $error .=   "Invalid File...";
         }
@@ -75,16 +77,18 @@ function upload_files() {
     if ($error == "") {
         if ($copiarFichero) {
 
-            if (!move_uploaded_file($_FILES['file']['tmp_name'],$upfile)) {
-              
+            if (!move_uploaded_file($_FILES['file']['tmp_name'], $upfile)) {
+
                 $error .= "<p>Error al subir la imagen.</p>";
                 return $return=array('resultado'=>false,'error'=>$error,'datos'=>"");
             }
             //We need edit $upfile because now i don't need absolute route.
-            //$upfile ='media/'.$nombreFichero;
+            $upfile ='/php_mvc_products/media/'.$nombreFichero;
+
             return $return=array('resultado'=>true , 'error'=>$error,'datos'=>$upfile);
         }
         if($_FILES['file']['error'] !== 0) { //Assignarem a l'us default-avatar
+
             $upfile = ($_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/media/default-avatar.png');
             return $return=array('resultado'=>true,'error'=>$error,'datos'=>$upfile);
         }
