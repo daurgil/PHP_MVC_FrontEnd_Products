@@ -14,7 +14,7 @@
           $this->conectar();
       }
 
-      private function setConexion() {
+      private function setConection() {
           require_once 'conf.class.singleton.php';
           $conf = confDB::getInstance();
 
@@ -33,4 +33,22 @@
                 self::$_instance = new self();
             return self::$_instance;
       }
+
+      private function conectar() {
+            $this->link = new mysqli($this->servidor, $this->usuario, $this->password);
+            $this->link->select_db($this->base_datos);
+        }
+
+        public function ejecutar($sql) {
+            $this->stmt = $this->link->query($sql);
+            return $this->stmt;
+        }
+
+        public function listar($stmt) {
+            $this->array = array();
+            while ($row = $stmt->fetch_array(MYSQLI_ASSOC)) {
+                array_push($this->array, $row);
+            }
+            return $this->array;
+        }
   }

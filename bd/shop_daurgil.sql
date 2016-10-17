@@ -26,11 +26,16 @@ DROP TABLE IF EXISTS `products`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `products` (
   `name` varchar(30) DEFAULT NULL,
-  `ident` varchar(100) DEFAULT NULL,
+  `ident` varchar(100) NOT NULL,
   `description` varchar(250) DEFAULT NULL,
   `quantity` varchar(10) DEFAULT NULL,
   `price` varchar(100) DEFAULT NULL,
-  `colors` varchar(200) DEFAULT NULL,
+  `Rojo` tinyint(1) DEFAULT NULL,
+  `Azul` tinyint(1) DEFAULT NULL,
+  `Verde` tinyint(1) DEFAULT NULL,
+  `Blanco` tinyint(1) DEFAULT NULL,
+  `Negro` tinyint(1) DEFAULT NULL,
+  `Otros` tinyint(1) DEFAULT NULL,
   `gender` varchar(50) NOT NULL,
   `country` varchar(45) DEFAULT NULL,
   `province` varchar(45) DEFAULT NULL,

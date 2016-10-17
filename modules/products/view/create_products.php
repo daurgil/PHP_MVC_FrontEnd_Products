@@ -47,9 +47,9 @@
                <input type="checkbox" id="colors[]" name="colors[]" class="colors" value="red">Rojo</input><br>
                <input type="checkbox" id="colors[]" name="colors[]" class="colors" value="blue">Azul</input><br>
                <input type="checkbox" id="colors[]" name="colors[]" class="colors" value="green">Verde</input><br>
-               <input type="checkbox" id="colors[]" name="colors[]" class="colors" value="blanco">Blanco</input><br>
-               <input type="checkbox" id="colors[]" name="colors[]" class="colors" value="negro">Negro</input><br>
-               <input type="checkbox" id="colors[]" name="colors[]" class="colors" value="otros">Otros</input><br>
+               <input type="checkbox" id="colors[]" name="colors[]" class="colors" value="white">Blanco</input><br>
+               <input type="checkbox" id="colors[]" name="colors[]" class="colors" value="black">Negro</input><br>
+               <input type="checkbox" id="colors[]" name="colors[]" class="colors" value="others">Otros</input><br>
                <div id="e_colors"></div>
            </td>
            <td rowspan="2">

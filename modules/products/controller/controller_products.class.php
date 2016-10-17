@@ -1,7 +1,8 @@
 <?php
+	session_start();
 	include ($_SERVER['DOCUMENT_ROOT'] . "/php_mvc_products/modules/products/utils/utils_products.inc.php");
 	include ($_SERVER['DOCUMENT_ROOT'] . "/php_mvc_products/utils/upload.php");
-	session_start();
+	include ($_SERVER['DOCUMENT_ROOT'] . "/php_mvc_products/utils/common.inc.php");
 
 
 
@@ -50,7 +51,19 @@
 				'img_icon' => $result_img['datos']
 				);
 
-				$message = "Product has been successfully registered";
+				/////////////////insert into BD////////////////////////
+        $arrValue = false;
+        $path_model = $_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/modules/products/model/model/';
+        $arrValue = loadModel($path_model, "prod_model", "add_product", $arrArgument);
+
+        //die();
+
+        if ($arrValue){
+            $message = "Su registro se ha efectuado correctamente, para finalizar compruebe que ha recibido un correo de validacion y siga sus instrucciones";
+        }else{
+            $message = "No se ha podido realizar su alta. Intentelo mas tarde";
+				}
+				//$message = "Product has been successfully registered";
 
 				//redireccion con $message y $arrArgument
 				$_SESSION['prd'] = $arrArgument;
