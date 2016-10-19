@@ -25,4 +25,16 @@ class prod_model {
         return $this->bll->add_product_BLL($arrArgument);
     }
 
+    public function obtain_countrys($url) {
+            return $this->bll->obtain_countrys_BLL($url);
+        }
+
+    public function obtain_provinces() {
+        return $this->bll->obtain_provinces_BLL();
+    }
+
+    public function obtain_locations($arrArgument) {
+        return $this->bll->obtain_locations_BLL($arrArgument);
+    }
+
 }

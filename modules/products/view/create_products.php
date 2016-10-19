@@ -77,10 +77,6 @@
             <td>Pais</td>
             <td>
                 <select name="country" id="country">
-                  <option value ="Select level" selected>Select level</option>
-          				<option value="spain">Spain</option>
-          				<option value="france">France</option>
-          				<option value="portugal">Portugal</option>
                   </select>
           				<div id="e_country"></div>
 
@@ -90,11 +86,6 @@
             <td>Provincia</td>
             <td>
                 <select name="province" id="province">
-                  <option value ="Select level" selected>Select level</option>
-          				<option value="cvalenciana">C. Valenciana</option>
-          				<option value="murcia">Murcia</option>
-          				<option value="madrid">Madrid</option>
-          				<option value="catalunya">Cataluña</option>
                 </select>
           				<div id="e_province"></div>
 
@@ -104,11 +95,6 @@
             <td>Localidad</td>
             <td>
                 <select name="location" id="location">
-                  <option value ="Select level" selected>Select level</option>
-          				<option value="olleria">L'Olleria</option>
-          				<option value="ontinyent">Ontinyent</option>
-          				<option value="xativa">Xativa</option>
-          				<option value="valencia">Valencia</option>
                 </select>
           				<div id="e_location"></div>
 

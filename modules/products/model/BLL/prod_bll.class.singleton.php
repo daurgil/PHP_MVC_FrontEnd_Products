@@ -28,4 +28,15 @@ class prod_bll {
         return $this->dao->add_product_DAO($this->db, $arrArgument);
     }
 
+    public function obtain_countrys_BLL($url) {
+        return $this->dao->obtain_countrys_DAO($url);
+    }
+
+    public function obtain_provinces_BLL() {
+        return $this->dao->obtain_provinces_DAO();
+    }
+
+    public function obtain_locations_BLL($arrArgument) {
+        return $this->dao->obtain_locations_DAO($arrArgument);
+    }
 }

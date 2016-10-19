@@ -32,7 +32,6 @@
 
 			$result_img = $_SESSION['result_img'];
 
-
 			if (($result['result_php']) && ($result_img['resultado'])) {
 
 				$arrArgument = array (
@@ -138,4 +137,62 @@
 	        echo json_encode($jsondata);
 	        exit;
 	    }
+	}
+
+	/////////////////////////////////////////////////// load_pais
+	if(  (isset($_GET["load_country"])) && ($_GET["load_country"] == true)  ){
+
+		$json = array();
+
+    	$url = 'http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso/ListOfCountryNamesByName/JSON';
+
+		$path_model=$_SERVER['DOCUMENT_ROOT'].'/php_mvc_products/modules/products/model/model/';
+		$json = loadModel($path_model, "prod_model", "obtain_countrys", $url);
+
+		if($json){
+			echo $json;
+			exit;
+		}else{
+			$json = "error";
+			echo $json;
+			exit;
+		}
+
+	/////////////////////////////////////////////////// load_provincias
+	if(  (isset($_GET["load_provinces"])) && ($_GET["load_provinces"] == true)  ){
+		$jsondata = array();
+        $json = array();
+
+		$path_model=$_SERVER['DOCUMENT_ROOT'].'/php_mvc_products/modules/products/model/model/';
+		$json = loadModel($path_model, "userModel", "obtain_provinces");
+
+		if($json){
+			$jsondata["provincias"] = $json;
+			echo json_encode($jsondata);
+			exit;
+		}else{
+			$jsondata["provincias"] = "error";
+			echo json_encode($jsondata);
+			exit;
+		}
+	}
+
+	/////////////////////////////////////////////////// load_poblaciones
+	if(  isset($_POST['idPoblac']) ){
+	    $jsondata = array();
+        $json = array();
+
+		$path_model=$_SERVER['DOCUMENT_ROOT'].'/24G dependent_combo_webservices/pages/model/model/';
+		$json = loadModel($path_model, "userModel", "obtain_locations", $_POST['idPoblac']);
+
+		if($json){
+			$jsondata["poblaciones"] = $json;
+			echo json_encode($jsondata);
+			exit;
+		}else{
+			$jsondata["poblaciones"] = "error";
+			echo json_encode($jsondata);
+			exit;
+		}
+	}
 	}

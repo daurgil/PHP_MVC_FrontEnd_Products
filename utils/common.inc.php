@@ -12,7 +12,7 @@ function loadModel($model_path, $model_name, $function, $arrArgument = '') {
            if (!method_exists($modelClass, $function)){
                die($function . ' function not found in Model ' . $model_name);
            }
-           
+
            $obj = $modelClass::getInstance();
            /*echo json_encode("arrValue");
            exit;*/
