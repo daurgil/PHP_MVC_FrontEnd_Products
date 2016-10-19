@@ -72,19 +72,19 @@ function validate_products($value){
         $valido =  false;
     }
 
-    if ($result_php['country'] === 'Select level') {
+    if ($result_php['country'] === 'Select country') {
 
-        $error['country'] = "You haven't select lvl.";
+        $error['country'] = "You haven't select country.";
         $valido = false;
     }
 
-    if ($result_php['province'] === 'Select level') {
-        $error['province'] = "You haven't select lvl.";
+    if ($result_php['province'] === 'Select province') {
+        $error['province'] = "You haven't select province.";
         $valido = false;
     }
 
-    if ($result_php['location'] === 'Select level') {
-        $error['location'] = "You haven't select lvl.";
+    if ($result_php['location'] === 'Select location') {
+        $error['location'] = "You haven't select location.";
         $valido = false;
     }
 
@@ -184,7 +184,7 @@ function validate_time($reception) {
         $day1 = substr($reception, 0, 2);
         $month1 = substr($reception, 3, 2);
         $year1 = substr($reception, 6, 4);
-        
+
         $reception = strtotime($day1 . "-" . $month1 . "-" . $year1) ;
 
     }

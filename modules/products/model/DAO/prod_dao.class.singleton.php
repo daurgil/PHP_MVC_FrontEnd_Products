@@ -66,7 +66,7 @@ class prod_DAO {
         $ch = curl_init();
         curl_setopt ($ch, CURLOPT_URL, $url);
         curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+        curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, 5);
         $file_contents = curl_exec($ch);
         curl_close($ch);
 
@@ -78,13 +78,13 @@ class prod_DAO {
 		    $tmp = array();
 
     		$provinces = simplexml_load_file($_SERVER['DOCUMENT_ROOT']."/php_mvc_products/resources/provinciasypoblaciones.xml");
-    		$result = $provinces->xpath("/lista/provincia/nombre | /lista/provincia/@id");
+        $result = $provinces->xpath("/lista/provincia/nombre | /lista/provincia/@id");
     		for ($i=0; $i<count($result); $i+=2) {
     			$e=$i+1;
     			$province=$result[$e];
 
     			$tmp = array(
-    				'id' => (string) $result[$i], 'nombre' => (string) $provincia
+    				'id' => (string) $result[$i], 'nombre' => (string) $province
     			);
     			array_push($json, $tmp);
     		}

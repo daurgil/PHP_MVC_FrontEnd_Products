@@ -140,7 +140,7 @@
 	}
 
 	/////////////////////////////////////////////////// load_pais
-	if(  (isset($_GET["load_country"])) && ($_GET["load_country"] == true)  ){
+	if( (isset($_GET["load_country"])) && ($_GET["load_country"] == true)  ){
 
 		$json = array();
 
@@ -157,14 +157,17 @@
 			echo $json;
 			exit;
 		}
+	}
 
 	/////////////////////////////////////////////////// load_provincias
-	if(  (isset($_GET["load_provinces"])) && ($_GET["load_provinces"] == true)  ){
+	if((isset($_GET["load_provinces"])) && ($_GET["load_provinces"] == true)){
+		/*echo json_encode("load_provinces");
+		exit;*/
 		$jsondata = array();
         $json = array();
 
 		$path_model=$_SERVER['DOCUMENT_ROOT'].'/php_mvc_products/modules/products/model/model/';
-		$json = loadModel($path_model, "userModel", "obtain_provinces");
+		$json = loadModel($path_model, "prod_model", "obtain_provinces");
 
 		if($json){
 			$jsondata["provincias"] = $json;
@@ -178,12 +181,12 @@
 	}
 
 	/////////////////////////////////////////////////// load_poblaciones
-	if(  isset($_POST['idPoblac']) ){
+	if( isset($_POST['idPoblac']) ){
 	    $jsondata = array();
         $json = array();
 
-		$path_model=$_SERVER['DOCUMENT_ROOT'].'/24G dependent_combo_webservices/pages/model/model/';
-		$json = loadModel($path_model, "userModel", "obtain_locations", $_POST['idPoblac']);
+		$path_model=$_SERVER['DOCUMENT_ROOT'].'/php_mvc_products/modules/products/model/model/';
+		$json = loadModel($path_model, "prod_model", "obtain_locations", $_POST['idPoblac']);
 
 		if($json){
 			$jsondata["poblaciones"] = $json;
@@ -194,5 +197,4 @@
 			echo json_encode($jsondata);
 			exit;
 		}
-	}
 	}

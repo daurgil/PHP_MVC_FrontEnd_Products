@@ -119,11 +119,9 @@ function pintar_products(data) {
     //arreglar ruta IMATGE!!!!!
 
     var cad = data.prd.img_icon;
-    console.log(cad);
     //var cad = cad.toLowerCase();
     var img = document.createElement("div");
     var html = '<img src="' + cad + '" height="75" width="75"> ';
-    console.log(html);
     img.innerHTML = html;
     //alert(html);
 

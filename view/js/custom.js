@@ -8,7 +8,7 @@
 
     100% To use For Personal And Commercial Use.
     IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
+
     ========================================================  */
 
 
@@ -30,17 +30,17 @@
             $('.carousel').carousel({
                 interval: 1000 //TIME IN MILLI SECONDS
             })
-            // PRETTYPHOTO FUNCTION 
+            // PRETTYPHOTO FUNCTION
 
             $("a.preview").prettyPhoto({
                 social_tools: false
             });
 
-       
+
 
 
             /*====================================
-               WRITE YOUR SCRIPTS BELOW 
+               WRITE YOUR SCRIPTS BELOW
            ======================================*/
 
 
@@ -59,6 +59,3 @@
     });
 
 }(jQuery));
-
-
-
