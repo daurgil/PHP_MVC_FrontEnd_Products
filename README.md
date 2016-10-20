@@ -1,1 +1,7 @@
-Asi hastadropzone y validacion PHP
+MASTER
+
+v1.3===>Dropzone, validacion PHP y JS
+
+v1.4===>Base de datos
+
+v1.5===>Dependent dropdowns
