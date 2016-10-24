@@ -31,6 +31,12 @@
                              echo 'deactivate';
                     ?>"><a href="index.php?module=products&view=create_products">Products</a></li>
                     <li class="
+                    <?php if($_GET['module'] === 'products')
+                             echo'active';
+                          else
+                             echo 'deactivate';
+                    ?>"><a href="index.php?module=products">List</a></li>
+                    <li class="
                     <?php if($_GET['module'] === 'portfolio')
                              echo'active';
                           else

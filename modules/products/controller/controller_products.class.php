@@ -6,14 +6,14 @@
 
 
 
-  ////////////////////////////
+  ////////////////////////////UPLOAD IMG to Media
   if ((isset($_GET["upload"])) && ($_GET["upload"] == true)) {
   		$result_img = upload_files();
 			$_SESSION['result_img']=$result_img;
 
   }
 
-///////////////////////////////////
+/////////ADD Prodruct validating by php, save in DB and return to JSControler
 
 	if ((isset($_POST['add_products_json']))) {
 	    add_products();
@@ -88,7 +88,7 @@
 			}
 	}
 
-	//////////////////////////
+	//////////////////////////DELETE IMG by Media
   if (isset($_GET["delete"]) && $_GET["delete"] == true) {
 		$_SESSION['result_img'] = array();
 		$result_delete = remove_files();
@@ -197,4 +197,29 @@
 			echo json_encode($jsondata);
 			exit;
 		}
+	}
+
+	/////////////Get Product by DB to list
+	if ($_GET["idProduct"]) {
+	    $id = $_GET["idProduct"];
+			
+	    $path_model = $_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/modules/products/model/model/';
+	    $arrValue = loadModel($path_model, "prod_model", "details_products",$id);
+
+	    if ($arrValue[0]) {
+	        loadView($_SERVER['DOCUMENT_ROOT'].'/php_mvc_products/modules/products/view/', 'details_products.php', $arrValue[0]);
+	    } else {
+	        $message = "NOT FOUND PRODUCT";
+	        loadView($_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/view/inc/', '404.php', $message);
+	    }
+	} else {
+	    $path_model = $_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/modules/products/model/model/';
+	    $arrValue = loadModel($path_model, "prod_model", "list_products");
+
+	    if ($arrValue) {
+	        loadView($_SERVER['DOCUMENT_ROOT'].'/php_mvc_products/modules/products/view/', 'list_products.php', $arrValue);
+	    } else {
+	        $message = "NOT PRODUCTS";
+	        loadView($_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/view/inc/', '404.php', $message);
+	    }
 	}
