@@ -108,7 +108,7 @@ class prod_DAO {
         return $json;
     }
 
-    public function list_products_DAO($db) {
+    /*public function list_products_DAO($db) {
         $sql = "SELECT * FROM products";
         $stmt = $db->ejecutar($sql);
         return $db->listar($stmt);
@@ -120,5 +120,5 @@ class prod_DAO {
         $stmt = $db->ejecutar($sql);
         return $db->listar($stmt);
 
-    }
+    }*/
 }

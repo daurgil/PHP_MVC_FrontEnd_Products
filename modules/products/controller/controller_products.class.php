@@ -2,8 +2,7 @@
 	session_start();
 	include ($_SERVER['DOCUMENT_ROOT'] . "/php_mvc_products/modules/products/utils/utils_products.inc.php");
 	include ($_SERVER['DOCUMENT_ROOT'] . "/php_mvc_products/utils/upload.php");
-	include ($_SERVER['DOCUMENT_ROOT'] . "/php_mvc_products/utils/common.inc.php");
-
+	include ($_SERVER['DOCUMENT_ROOT'] . "/php_mvc_products/utils/common.inc.php");//necesari per al altre modul
 
 
   ////////////////////////////UPLOAD IMG to Media
@@ -197,29 +196,4 @@
 			echo json_encode($jsondata);
 			exit;
 		}
-	}
-
-	/////////////Get Product by DB to list
-	if ($_GET["idProduct"]) {
-	    $id = $_GET["idProduct"];
-			
-	    $path_model = $_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/modules/products/model/model/';
-	    $arrValue = loadModel($path_model, "prod_model", "details_products",$id);
-
-	    if ($arrValue[0]) {
-	        loadView($_SERVER['DOCUMENT_ROOT'].'/php_mvc_products/modules/products/view/', 'details_products.php', $arrValue[0]);
-	    } else {
-	        $message = "NOT FOUND PRODUCT";
-	        loadView($_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/view/inc/', '404.php', $message);
-	    }
-	} else {
-	    $path_model = $_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/modules/products/model/model/';
-	    $arrValue = loadModel($path_model, "prod_model", "list_products");
-
-	    if ($arrValue) {
-	        loadView($_SERVER['DOCUMENT_ROOT'].'/php_mvc_products/modules/products/view/', 'list_products.php', $arrValue);
-	    } else {
-	        $message = "NOT PRODUCTS";
-	        loadView($_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/view/inc/', '404.php', $message);
-	    }
 	}
