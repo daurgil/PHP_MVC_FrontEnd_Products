@@ -323,13 +323,11 @@ $(document).ready(function(){
   		var location = $("#location");
 
   		if(country !== 'ES'){
-          console.log("change1");
   	       province.prop('disabled', true);
   	       location.prop('disabled', true);
   	       $("#province").empty();
   		     $("#location").empty();
   		}else{
-            console.log("change2");
   	         province.prop('disabled', false);
   	         location.prop('disabled', false);
   	         load_provincias_v1();
@@ -337,7 +335,7 @@ $(document).ready(function(){
 	 });// END changes combobox
 
 	$("#province").change(function() {
-    console.log("change");
+
 		var prov = $(this).val();
 		if(prov > 0){
 			load_poblaciones_v1(prov);
@@ -563,7 +561,6 @@ function load_countries_v1() {
             if(response === 'error'){
                 load_countries_v2("resources/ListOfCountryNamesByName.json");
             }else{
-
                 load_countries_v2("modules/products/controller/controller_products.class.php?load_country=true"); //oorsprong.org
             }
     })
@@ -592,10 +589,11 @@ function load_provincias_v2() {
 function load_provincias_v1() { //provinciasypoblaciones.xml - xpath
     $.get("modules/products/controller/controller_products.class.php?load_provinces=true",
         function(response) {
+          //console.log(response);
           $("#province").empty();
 	        $("#province").append('<option value="" selected="selected">Select province</option>');
 
-          //console.log(response);
+
           var json = JSON.parse(response);
 		      var provinces=json.provincias;
 
@@ -616,7 +614,7 @@ function load_provincias_v1() { //provinciasypoblaciones.xml - xpath
 }
 
 function load_poblaciones_v2(prov) {
-  console.log("location2");
+
     $.get("resources/provinciasypoblaciones.xml", function (xml) {
 		$("#location").empty();
 	    $("#location").append('<option value="" selected="selected">Select location</option>');
@@ -633,7 +631,6 @@ function load_poblaciones_v2(prov) {
 }
 
 function load_poblaciones_v1(prov) { //provinciasypoblaciones.xml - xpath
-  console.log("location1");
     var datos = { idPoblac : prov  };
 	$.post("modules/products/controller/controller_products.class.php", datos, function(response) {
 	     console.log("response");

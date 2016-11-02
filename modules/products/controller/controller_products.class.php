@@ -143,7 +143,7 @@
 
 		$json = array();
 
-    	$url = 'http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso/ListOfCountryNamesByName/JSON';
+    $url = 'http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso/ListOfCountryNamesByName/JSON';
 
 		$path_model=$_SERVER['DOCUMENT_ROOT'].'/php_mvc_products/modules/products/model/model/';
 		$json = loadModel($path_model, "prod_model", "obtain_countrys", $url);
@@ -157,6 +157,7 @@
 			exit;
 		}
 	}
+
 
 	/////////////////////////////////////////////////// load_provincias
 	if((isset($_GET["load_provinces"])) && ($_GET["load_provinces"] == true)){

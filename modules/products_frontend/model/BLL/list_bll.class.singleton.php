@@ -1,11 +1,8 @@
 <?php
-
-$path = $_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/';
-define('SITE_ROOT', $path);
-define('MODEL_PATH', SITE_ROOT . 'model/');
-
+define('MODEL_PATH', SITE_ROOT . '/model/');
 require (MODEL_PATH . "db.class.singleton.php");
-require(SITE_ROOT . "modules/products_frontend/model/DAO/list_dao.class.singleton.php");
+
+require(SITE_ROOT . "/modules/products_frontend/model/DAO/list_dao.class.singleton.php");
 
 class list_bll {
 
@@ -30,5 +27,13 @@ class list_bll {
 
     public function details_products_BLL($id) {
         return $this->dao->details_products_DAO($this->db,$id);
+    }
+
+    public function page_products_BLL($arrArgument) {
+        return $this->dao->page_products_DAO($this->db,$arrArgument);
+    }
+
+    public function total_products_BLL() {
+        return $this->dao->total_products_DAO($this->db);
     }
 }

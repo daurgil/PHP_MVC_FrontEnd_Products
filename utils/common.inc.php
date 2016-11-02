@@ -9,9 +9,10 @@ function loadModel($model_path, $model_name, $function, $arrArgument = '') {
            $modelClass = $model_name;
 
            if (!method_exists($modelClass, $function)){
-             loadView($_SERVER['DOCUMENT_ROOT']. '/php_mvc_products/view/inc/',
+             /*loadView($_SERVER['DOCUMENT_ROOT']. '/php_mvc_products/view/inc/',
                      '404.php', ' Function not found in Model ');
-               //die($function . ' function not found in Model ' . $model_name);
+               //die($function . ' function not found in Model ' . $model_name);*/
+               throw new Exception();
            }
 
            $obj = $modelClass::getInstance();
@@ -20,9 +21,11 @@ function loadModel($model_path, $model_name, $function, $arrArgument = '') {
                return $obj->$function($arrArgument);
            }
        } else {
-            loadView($_SERVER['DOCUMENT_ROOT']. '/php_mvc_products/view/inc/',
+         throw new Exception();
+
+            /*loadView($_SERVER['DOCUMENT_ROOT']. '/php_mvc_products/view/inc/',
                     '404.php', ' Model Not Found under Model Folder');
-           //die($model_name . ' Model Not Found under Model Folder');
+           //die($model_name . ' Model Not Found under Model Folder');*/
        }
 }///END loadModel
 
@@ -36,9 +39,18 @@ function loadView($rutaVista, $templateName, $arrValue=''){
       }
       include_once($viewPath);
     } else {
-      $message = "NO TEMPLATE FOUND";
-			$arrData = $message;
-			require_once ($_SERVER['DOCUMENT_ROOT']. '/php_mvc_products/view/inc/404.php');
-			die();
+      $log=Log::getInstance();
+      $log->add_log_general("error loadView general", $_GET['module'],
+            "response ". http_response_code());
+      $log->add_log_product("error loadView general", "", $_GET['module'],
+            "response ". http_response_code()); //$msg, $username = "", $controller, $function
+
+      $result = response_code(http_response_code());
+      $arrData = $result;
+
+      /*$message = "NO TEMPLATE FOUND";
+			$arrData = $message;*/
+			require_once ($_SERVER['DOCUMENT_ROOT']. '/php_mvc_products/view/inc/templates_error/'. "error" .'.php');
+
     }
 }////END loadView

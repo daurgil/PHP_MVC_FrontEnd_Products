@@ -1,0 +1,226 @@
+27/10/16 05:38:14 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:38:14 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:38:15 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:38:15 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:38:15 PM | ERROR - 503 BD |  | response 200
+27/10/16 05:38:15 PM | error paint_template_error | products | response200
+27/10/16 05:38:33 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:38:33 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:38:33 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:38:33 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:38:35 PM | ERROR - 503 BD |  | response 200
+27/10/16 05:38:35 PM | error paint_template_error | products | response200
+27/10/16 05:40:43 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:40:43 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:40:43 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:40:43 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:40:44 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:40:44 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:41:00 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:41:00 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:43:25 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 05:43:25 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:01:16 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:01:16 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:01:16 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:01:16 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:01:18 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:01:18 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:03:51 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:03:51 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:03:51 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:03:51 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:03:52 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:03:52 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:03:58 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:03:58 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:38 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:38 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:38 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:38 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:39 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:39 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:46 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:46 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:48 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:48 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:51 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:51 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:55 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:32:55 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:33:14 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:33:14 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:33:14 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:33:14 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:56:56 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:56:56 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:56:56 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:56:56 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:59:00 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:59:00 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:59:00 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:59:00 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:59:03 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:59:03 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:59:06 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 06:59:06 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 07:06:02 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 07:06:02 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 07:06:02 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 07:06:02 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 07:06:03 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 07:06:03 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 07:13:59 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 07:13:59 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 07:13:59 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 07:13:59 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 07:14:01 PM | ERROR: [8] Constant SITE_ROOT already defined
+Notice on line 3 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200
+27/10/16 07:14:01 PM | ERROR: [8] Constant MODEL_PATH already defined
+Notice on line 4 in file /var/www/html/php_mvc_products/model/conf.class.singleton.php
+ | products_frontend | response 200

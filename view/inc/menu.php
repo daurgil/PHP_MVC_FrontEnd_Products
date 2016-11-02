@@ -35,7 +35,7 @@
                              echo'active';
                           else
                              echo 'deactivate';
-                    ?>"><a href="index.php?module=products_frontend">List</a></li>
+                    ?>"><a href="index.php?module=products_frontend&view=list">List</a></li>
                     <li class="
                     <?php if($_GET['module'] === 'portfolio')
                              echo'active';

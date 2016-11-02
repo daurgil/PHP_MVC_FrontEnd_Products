@@ -68,9 +68,17 @@ class prod_DAO {
         curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, 5);
         $file_contents = curl_exec($ch);
+
+        $httpcode = curl_getinto( $ch, CURLINFO_HTTP_CODE);
+
         curl_close($ch);
 
-        return ($file_contents) ? $file_contents : FALSE;
+        $accepted_response = array( 200, 301, 302);
+        if (!in_array( $httpcode, $accepted_response)) {
+          return FALSE;
+        }else {
+          return ($file_contents) ? $file_contents : FALSE;
+        }
     }
 
     public function obtain_provinces_DAO() {
@@ -107,18 +115,4 @@ class prod_DAO {
       	}
         return $json;
     }
-
-    /*public function list_products_DAO($db) {
-        $sql = "SELECT * FROM products";
-        $stmt = $db->ejecutar($sql);
-        return $db->listar($stmt);
-
-    }
-
-    public function details_products_DAO($db,$id) {
-        $sql = "SELECT * FROM products WHERE ident=".$id;
-        $stmt = $db->ejecutar($sql);
-        return $db->listar($stmt);
-
-    }*/
 }

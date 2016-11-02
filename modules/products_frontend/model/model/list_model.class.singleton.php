@@ -1,9 +1,7 @@
 <?php
 /*echo json_encode("model");
 exit;*/
-$path = $_SERVER['DOCUMENT_ROOT'] . '/php_mvc_products/';
-define('SITE_ROOT', $path);
-require(SITE_ROOT . 'modules/products_frontend/model/BLL/list_bll.class.singleton.php');
+require(SITE_ROOT . '/modules/products_frontend/model/BLL/list_bll.class.singleton.php');
 
 class list_model {
   /*echo json_encode("model");
@@ -27,6 +25,14 @@ class list_model {
 
     public function details_products($id) {
         return $this->bll->details_products_BLL($id);
+    }
+
+    public function page_products($arrArgument) {
+        return $this->bll->page_products_BLL($arrArgument);
+    }
+
+    public function total_products() {
+        return $this->bll->total_products_BLL();
     }
 
 }
