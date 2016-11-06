@@ -1,55 +1,35 @@
 //we do this so that  details_prod don't appear
-$("#details_prod").hide();
+
 $(document).ready(function () {
-    $('.prod').click(function () {
+    $('.product_id').css('cursor', 'pointer');
+    $('.product_id').click(function () {
         var id = this.getAttribute('id');
         console.log(id);
+        //alert(id);
 
         $.get("modules/products_frontend/controller/controller_products_frontend.class.php?idProduct=" + id, function (data, status) {
+            console.log(data);
             var json = JSON.parse(data);
             var product = json.product;
-            //console.log(product);
+            console.log(product);
 
-            $("#img_prod").html('<img src="' + product.img_icon + '" height="75" width="75"> ');
-            $("#name_prod").html(product.name);
-            $("#description_prod").html("<strong>Description: <br/></strong>" + product.description);
-            //$("#titration_prod").html("<strong>Titration:</strong>" + product.titration);
-            $("#price_prod").html("Price: " + product.price + " €");
+            $('#results').html('');
+            $('.pagination').html('');
 
-            //we do this so that  details_prod  appear
-            $("#details_prod").show();
+            var img_product = document.getElementById('img_prod');
+            img_product.innerHTML = '<img src="' + product.img_icon + '" class="img-product"> ';
 
-            $("#product").dialog({
-                width: 850, //<!-- ------------- ancho de la ventana -->
-                height: 500, //<!--  ------------- altura de la ventana -->
-                //show: "scale", <!-- ----------- animación de la ventana al aparecer -->
-                //hide: "scale", <!-- ----------- animación al cerrar la ventana -->
-                resizable: "false", //<!-- ------ fija o redimensionable si ponemos este valor a "true" -->
-                //position: "down",<!--  ------ posicion de la ventana en la pantalla (left, top, right...) -->
-                modal: "true", //<!-- ------------ si esta en true bloquea el contenido de la web mientras la ventana esta activa (muy elegante) -->
-                buttons: {
-                    Ok: function () {
-                        $(this).dialog("close");
-                    }
-                },
-                show: {
-                    effect: "blind",
-                    duration: 1000
-                },
-                hide: {
-                    effect: "explode",
-                    duration: 1000
-                }
-            });
+            var nom_product = document.getElementById('name_prod');
+            nom_product.innerHTML = product.name;
+            var desc_product = document.getElementById('description_prod');
+            desc_product.innerHTML = product.description;
+            var price_product = document.getElementById('price_prod');
+            price_product.innerHTML = "Precio: " + product.price + " €";
+            price_product.setAttribute("class", "special");
+
         })
                 .fail(function (xhr) {
-                    //if  we already have an error 404
-                    if (xhr.status === 404) {
-                        $("#results").load("modules/products_frontend/controller/controller_products_frontend.class.php?view_error=false");
-                    } else {
-                        $("#results").load("modules/products_frontend/controller/controller_products_frontend.class.php?view_error=true");
-                    }
-
+                    $("#results").load("modules/products_frontend/controller/controller_products_frontend.class.php?view_error=true");
                 });
     });
 });

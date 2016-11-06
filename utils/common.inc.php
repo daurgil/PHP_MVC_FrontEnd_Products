@@ -29,7 +29,7 @@ function loadModel($model_path, $model_name, $function, $arrArgument = '') {
        }
 }///END loadModel
 
-function loadView($rutaVista, $templateName, $arrValue=''){
+function loadView($rutaVista="", $templateName="", $arrValue=''){
     $viewPath= $rutaVista . $templateName;
     $arrData= '';
 
@@ -39,13 +39,20 @@ function loadView($rutaVista, $templateName, $arrValue=''){
       }
       include_once($viewPath);
     } else {
+      $result = filter_num_int($rutaVista);
+      if ($result['resultado']) {
+        $rutaVista = $result['datos'];
+      } else {
+        $rutaVista = http_response_code();
+      }
+
       $log=Log::getInstance();
       $log->add_log_general("error loadView general", $_GET['module'],
-            "response ". http_response_code());
+            "response ". $rutaVista);
       $log->add_log_product("error loadView general", "", $_GET['module'],
-            "response ". http_response_code()); //$msg, $username = "", $controller, $function
+            "response ". $rutaVista); //$msg, $username = "", $controller, $function
 
-      $result = response_code(http_response_code());
+      $result = response_code($rutaVista);
       $arrData = $result;
 
       /*$message = "NO TEMPLATE FOUND";

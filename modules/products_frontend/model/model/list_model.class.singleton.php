@@ -27,12 +27,35 @@ class list_model {
         return $this->bll->details_products_BLL($id);
     }
 
-    public function page_products($arrArgument) {
+    public function list_limit_products($arrArgument){
+        return $this->bll->list_limit_products_BLL($arrArgument);
+    }
+
+    public function count_products() {
+        return $this->bll->count_products_BLL();
+    }
+
+    public function select_column_products($arrArgument){
+        return $this->bll->select_column_products_BLL($arrArgument);
+    }
+
+    public function select_like_products($arrArgument){
+        return $this->bll->select_like_products_BLL($arrArgument);
+    }
+
+    public function count_like_products($arrArgument){
+        return $this->bll->count_like_products_BLL($arrArgument);
+    }
+
+    public function select_like_limit_products($arrArgument){
+         return $this->bll->select_like_limit_products_BLL($arrArgument);
+    }
+    /*public function page_products($arrArgument) {
         return $this->bll->page_products_BLL($arrArgument);
     }
 
     public function total_products() {
         return $this->bll->total_products_BLL();
-    }
+    }*/
 
 }

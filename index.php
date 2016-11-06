@@ -3,7 +3,7 @@
 	session_start();
 	$_SESSION['module'] = "";
 	$_SESSION['result_img'] = array();
-	require_once("view/inc/header.html");
+	require_once("view/inc/header.php");
 	require_once("view/inc/menu.php");
 
 	if (PRODUCTION) { //we are in production
@@ -23,7 +23,11 @@
 	}
 
 	if ( (isset($_GET['module'])) && (isset($_GET['view'])) ) {
-		require_once("modules/".$_GET['module']."/view/".$_GET['view'].".php");
+		if($_GET['view']==='list'){
+			require_once("modules/".$_GET['module']."/view/".$_GET['view'].".html");
+		}else{
+			require_once("modules/".$_GET['module']."/view/".$_GET['view'].".php");
+		}
 	}
 
 	require_once("view/inc/footer.html");
